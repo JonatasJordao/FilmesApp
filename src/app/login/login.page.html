@@ -1,0 +1,20 @@
+
+<ion-content [fullscreen]="true">
+
+  <div class="center"></div>
+  <ion-card color= "dark">
+   <img src="assets/netflix-logo.jpg">
+   <ion-card-title class="ion-text-center">JONAFLIX</ion-card-title>
+   <ion-item lines="none" color="dark">
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input type="email" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item lines="none" color="dark">
+    <ion-label position="floating">senha</ion-label>
+    <ion-input type="password" [(ngModel)]="senha"></ion-input>
+  </ion-item>
+  <ion-button (click)="login()"  expand="full" fill="outline" color="light">ENTRAR</ion-button>
+  <ion-button expand="full" fill="clear" color="light">REGISTRAR</ion-button>
+  </ion-card>
+
+</ion-content>
